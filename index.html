@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="style.css">
+    <title>Tarea1</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <div class="title">
+            <h1>Calculador de figuras</h1>
+        </div>
+        <div class="wrapper_Form">
+            <label for="optionFigure">Selecciona una figura:</label><br/>
+            <select id="optionFigure" class="form">
+                <option value="circle">Círculo</option>
+                <option value="square">Cuadrado</option>
+                <option value="rectangle">Rectángulo</option>
+                <option value="triangle">Triángulo</option>
+            </select>
+            <div id="input_container" class="wrapper_Form">
+              <!-- El contenedor del input -->
+              
+            </div>
+            <button id="button_calculator">
+              Calcular
+            </button>
+            <div id="resp_container">
+              <!-- La resupuesta del contenedor -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
